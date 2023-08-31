@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Gagan</title>
+</head>
+<body>
+    <script language="javascript">
+        function login ()
+        {
+            var username = prompt ("Masukan Username");
+            var password = prompt ("Masukan Password");
+            window.location.href= "formGagan.html";
+        }
+
+    </script>
+        <form align="center">
+            <h2>Masukan Akun</br></h2>
+            <input type="button" name="Login" value="Login" onclick="login()">
+        </form>
+        <style>
+            input[type=button] {
+            margin: 250px;
+            margin-left: 15px;
+            margin-top: 50px;
+            margin-bottom: 100px;
+            padding: 100px;
+            padding-top: 30px;
+            padding-bottom: 50px;
+            border: 6px solid cyan;
+            border-radius: 10px;    
+	        background-color: blue;
+	        color :white;
+	        padding: 20px 70px;
+	        border: none;
+	        border-radius: 5px;
+	        cursor : pointer;
+            }
+
+            form {
+            max-width: 200px;
+            margin: 0 auto;
+            padding: 100px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            border: 6px solid cyan;
+            border-radius: 10px;
+            background-color: palegreen;
+            font-family:  'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        body {
+            background-color: slategrey;
+        }
+       
+        </style>
+    
+</body>
+</html>
