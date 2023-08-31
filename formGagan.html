@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Data</title>
+
+</head>
+<body>
+
+    
+    <form action="Gagan.php" method="POST">
+        <h2 align="center">FORM UTS GAGAN</h2>
+        <label>NPM</label></br>
+        <input type="text" name="npm" ></br>
+        <label>Nama</label></br>
+        <input type="text" name="nama"></br>
+        <label>Alamat</label></br>
+        <textarea name="alamat" cols="30" rows="5"></textarea></br></br>
+        <label>Jenis Kelamin</label></br>
+        <input type="radio" name="jk" value="Laki laki">Laki laki</br>
+        <input type="radio" name="jk" value="Perempuan">Perempuan</br></br>
+        <label>Jurusan</label></br>
+        <select name="jurusan" >
+            <option value="pilihjurusan">--Pilih Jurusan--</option></br>
+            <option value="informatika">Informatika</option></br>
+            <option value="sipil">Sipil</option>
+            <option value="elektro">Elektro</option>
+            <option value="akuntansi">Akuntansi</option>
+            <option value="si">Sistem Informasi</option>
+        </select></br></br>
+        <label>Angkatan</label></br>
+        <select name="angkatan" >
+            <option value="pilihjurusan">--Pilih Jurusan--</option>
+            <option value="2018">2018</option>
+            <option value="2019">2019</option>
+            <option value="2020">2020</option>
+            <option value="2021">2021</option>
+            <option value="2022">2022</option>
+        </select></br></br>
+        <button onclick="myFunction()">Simpan</button>
+        <script>
+            function myFunction() {
+              (window.confirm("Apakah data akan disimpan?")) 
+            }
+            </script>
+
+    </form>
+    <style>
+        form {
+            max-width: 200px;
+            margin: 0 auto;
+            padding: 100px;
+            padding-top: 30px;
+            padding-bottom: 50px;
+            border: 6px solid cyan;
+            border-radius: 10px;
+            background-color: palegreen;
+            font-family:  'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+       
+        button {
+	        background-color: blue;
+	        color :white;
+	        padding: 5px 15px;
+	        border: none;
+	        border-radius: 5px;
+	        cursor : pointer;
+	
+
+        }
+
+        select  {
+            width: 100%;
+            padding: 4px;
+            font-size: 15px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: black;
+            background-color: #fff;
+            border: 3px solid cyan;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        textarea {
+            width: 100%;
+            padding: 4px;
+            font-size: 15px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: black;
+            background-color: #fff;
+            border: 3px solid cyan;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        input[type=text] {
+            width: 100%;
+            padding: 4px;
+            font-size: 15px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: black;
+            background-color: #fff;
+            border: 3px solid cyan;
+            border-radius: 4px;
+            box-sizing: border-box;
+            
+        }
+
+        input[type=radio] {
+            display: inline-block;
+            margin-bottom: 8px;
+            cursor: pointer;
+            height: 15px;
+            width: 15px;
+            background-color: #eee;
+            border-radius: 50%;
+
+        }
+
+        body {
+            background-color: slategrey;
+        }
+    </style>
+   
+</body>
+</html>
